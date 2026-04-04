@@ -1,17 +1,14 @@
 <div align="center">
 
-# CC Switch
+# CC Switch Legacy
 
-### Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 的全方位管理工具
+### 一个为 macOS 10.15 Catalina 提供兼容支持的 CC Switch 分支
 
-[![Version](https://img.shields.io/github/v/release/farion1231/cc-switch?color=blue&label=version)](https://github.com/farion1231/cc-switch/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/farion1231/cc-switch/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#兼容性)
+[![macOS](https://img.shields.io/badge/macOS-10.15%2B-blue.svg)](#兼容性)
 [![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri%202-orange.svg)](https://tauri.app/)
-[![Downloads](https://img.shields.io/github/downloads/farion1231/cc-switch/total)](https://github.com/farion1231/cc-switch/releases/latest)
 
-<a href="https://trendshift.io/repositories/15372" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15372" alt="farion1231%2Fcc-switch | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-[English](README.md) | 中文 | [日本語](README_JA.md) | [更新日志](CHANGELOG.md)
+[English](README.md) | 中文 | [兼容性适配说明](docs/macos-10.15-compat.md) | [上游项目](https://github.com/farion1231/cc-switch) | [更新日志](CHANGELOG.md)
 
 </div>
 
@@ -80,183 +77,73 @@ Claude Code / Codex / Gemini 官方渠道低至 3.8 / 0.2 / 0.9 折，充值更�
 <td>感谢 Right Code 赞助了本项目！Right Code 稳定提供 Claude Code、Codex、Gemini 等模型的中转服务。主打<strong>极高性价比</strong>的Codex包月套餐，<strong>提供额度转结，套餐当天用不完的额度，第二天还能接着用！</strong>充值即可开票，企业、团队用户一对一对接。同时为 CC Switch 的用户提供了特别优惠：通过<a href="https://www.right.codes/register?aff=CCSWITCH">此链接</a>注册，每次充值均可获得实付金额25%的按量额度！</td>
 </tr>
 
-<tr>
-<td width="180"><a href="https://aicoding.sh/i/CCSWITCH"><img src="assets/partners/logos/aicoding.jpg" alt="AICoding" width="150"></a></td>
-<td>感谢 AICoding.sh 赞助了本项目！AICoding.sh —— 全球大模型 API 超值中转服务！Claude Code 1.9 折，GPT 0.1 折，已为数百家企业提供高性价比 AI 服务。支持 Claude Code、GPT、Gemini 及国内主流模型，企业级高并发、极速开票、7×24 专属技术支持，通过<a href="https://aicoding.sh/i/CCSWITCH">此链接</a> 注册的 CC Switch 用户，首充可享受九折优惠！</td>
-</tr>
+这个仓库是基于 [CC Switch](https://github.com/farion1231/cc-switch) 的兼容性分支。
 
-<tr>
-<td width="180"><a href="https://crazyrouter.com/register?aff=OZcm&ref=cc-switch"><img src="assets/partners/logos/crazyrouter.jpg" alt="Crazyrouter" width="150"></a></td>
-<td>感谢 Crazyrouter 赞助了本项目！Crazyrouter 是一个高性能 AI API 聚合平台——一个 API Key 即可访问 300+ 模型，包括 Claude Code、Codex、Gemini CLI 等。全部模型低至官方定价的 55%，支持自动故障转移、智能路由和无限并发。Crazyrouter 为 CC Switch 用户提供了专属优惠：通过<a href="https://crazyrouter.com/register?aff=OZcm&ref=cc-switch">此链接</a>注册即可获得 <strong>$2 免费额度</strong>，首次充值时输入优惠码 `CCSWITCH` 还可获得额外 <strong>30% 奖励额度</strong>！</td>
-</tr>
+这个分支的目标很明确：尽量保持原版 CC Switch 的使用体验，同时让桌面应用可以在 **macOS 10.15 Catalina** 上构建和运行。上游项目当前已经不再以 10.15 为兼容目标，所以这里单独维护一个 legacy 分支。
 
-<tr>
-<td width="180"><a href="https://www.sssaicode.com/register?ref=DCP0SM"><img src="assets/partners/logos/sssaicode.png" alt="SSSAiCode" width="150"></a></td>
-<td>感谢 SSSAiCode 赞助了本项目！SSSAiCode 是一家稳定可靠的API中转站，致力于提供稳定、可靠、平价的Claude、CodeX模型服务，<strong>提供高性价比折合0.5￥/$的官方Claude服务</strong>，支持包月、Paygo多种计费方式、支持当日快速开票，SSSAiCode为本软件的用户提供特别优惠，使用<a href="https://www.sssaicode.com/register?ref=DCP0SM">此链接</a>注册每次充值均可享受10$的额外奖励！</td>
-</tr>
+如果你使用的是 macOS 12 及以上，而且并不需要 Catalina 兼容性，那么优先使用上游项目会更合适。
 
-<tr>
-<td width="180"><a href="https://www.openclaudecode.cn/register?aff=aOYQ"><img src="assets/partners/logos/mikubanner.svg" alt="Micu" width="150"></a></td>
-<td>感谢 米醋API 赞助了本项目！米醋API 是一家致力于提供极致性价比与高稳定性的全球大模型中转服务商。米醋API 背后有实体企业做核心保障，杜绝跑路风险，支持极速正规开票！我们主打“试错零成本”：1 元起充低门槛，0 手续费随时退款！米醋API 为本软件的用户提供了特别优惠，使用<a href="https://www.openclaudecode.cn/register?aff=aOYQ">此链接</a>注册并在充值时填写"ccswitch"优惠码可享九折优惠！</td>
-</tr>
+## 这个分支改了什么
 
-<tr>
-<td width="180"><a href="https://x-code.cc/register?aff=IbPp"><img src="assets/partners/logos/xcodeapi.png" alt="XCodeAPI" width="150"></a></td>
-<td>感谢 XCodeAPI 赞助了本项目！XCodeAPI 为本软件的用户提供特别福利，使用<a href="https://x-code.cc/register?aff=IbPp">此链接</a>注册后首单加赠10%的额度!(联系站长领取)</td>
-</tr>
+相对于上游 CC Switch，这个分支主要针对老版本 macOS 做了以下兼容处理：
 
-<tr>
-<td width="180"><a href="https://ctok.ai"><img src="assets/partners/logos/ctok.png" alt="CTok" width="150"></a></td>
-<td>感谢 CTok.ai 赞助了本项目！CTok.ai 致力于打造一站式 AI 编程工具服务平台。我们提供 Claude Code 专业套餐及技术社群服务，同时支持 Google Gemini 和 OpenAI Codex。通过精心设计的套餐方案和专业的技术社群，为开发者提供稳定的服务保障和持续的技术支持，让 AI 辅助编程真正成为开发者的生产力工具。点击<a href="https://ctok.ai">这里</a>注册！</td>
-</tr>
+- 将 macOS 部署目标从 `12.0` 下调到 `10.15`
+- 调整 Tauri 打包配置，使应用允许在 `macOS 10.15+` 安装运行
+- 为旧版 WebKit 缺失的协议方法加入 `objc2` 开发模式兼容处理
+- 将 `esbuild` 固定到 `0.21.5`，避免依赖更高版本 macOS 才有的系统符号
+- 下调前端构建目标，兼容旧版 Safari / WKWebView
+- 将 `smol-toml` 替换为 `@iarna/toml`，规避 Safari 13 对 `BigInt` 语法的不兼容
+- 为主题监听增加 `MediaQueryList.addListener` 回退逻辑
 
-<tr>
-<td width="180"><a href="https://chefshop.ai"><img src="assets/partners/logos/chefshop.png" alt="ChefShop" width="150"></a></td>
-<td>感谢  厨师长AI小铺 赞助了本项目！厨师长AI小铺 是一家专为 AI 重度订阅用户量身定制的优质账号服务商。平台提供涵盖 ChatGPT Plus/Pro、Claude Max、Grok Super/Heavy 以及 Gemini  等主流大模型的官方代充与稳定成品账号服务。点击<a href="https://chefshop.ai">这里</a>购买！</td>
-</tr>
+详细适配过程见 [docs/macos-10.15-compat.md](docs/macos-10.15-compat.md)。
 
-</table>
+## 功能概览
 
-</details>
+这个分支保留了 CC Switch 的主要功能：
 
-## 为什么选择 CC Switch？
-
-现代 AI 编程依赖于 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw 等 CLI 工具——但每个工具都有自己的配置格式。切换 API 供应商意味着手动编辑 JSON、TOML 或 `.env` 文件，而在多个工具之间缺乏一个统一管理 MCP, SKILLS 的方式。
-
-**CC Switch** 为你提供一个桌面应用来管理所有五个 CLI 工具。无需手动编辑配置文件，你将获得一个可视化界面，一键将供应商导入应用，一键在不同的供应商之间进行切换，内置 50+ 供应商预设、统一的 MCP, SKILLS 管理以及系统托盘即时切换功能——所有操作都基于可靠的 SQLite 数据库和原子写入机制，保护你的配置不被损坏。
-
-- **一个应用，五个 CLI 工具** — 在单一界面中管理 Claude Code、Codex、Gemini CLI、OpenCode 和 OpenClaw
-- **告别手动编辑** — 50+ 供应商预设，包括 AWS Bedrock、NVIDIA NIM 和社区中转服务；一键即可切换
-- **统一 MCP, SKILLS 管理** — 一个面板管理四个应用的 MCP, SKILLS, 支持双向同步
-- **系统托盘快速切换** — 从托盘菜单即时切换供应商，无需打开完整应用
-- **云同步** — 通过 Dropbox、OneDrive、iCloud 或 WebDAV 服务器在不同设备之间同步供应商数据
-- **跨平台** — 基于 Tauri 2 构建的原生桌面应用，支持 Windows、macOS 和 Linux
-- **小工具** - 内置了多种小工具来解决首次安装登录确认、禁止签名、插件拓展同步等多种功能
+- 在一个桌面应用里统一管理 **Claude Code**、**Codex**、**Gemini CLI**、**OpenCode**、**OpenClaw**
+- 无需手改 JSON、TOML、`.env` 文件即可导入和切换 provider
+- 统一管理 **MCP**、**Prompts**、**Skills**
+- 支持系统托盘快速切换 provider
+- 提供使用量和费用统计视图
+- 支持通过自定义配置目录或 WebDAV 做数据同步
+- 支持浏览和恢复多种 CLI 工具的会话记录
 
 ## 界面预览
 
-|                  主界面                   |                  添加供应商                  |
-| :---------------------------------------: | :------------------------------------------: |
-| ![主界面](assets/screenshots/main-zh.png) | ![添加供应商](assets/screenshots/add-zh.png) |
+| 主界面 | 添加 Provider |
+| :---: | :---: |
+| ![Main Interface](assets/screenshots/main-en.png) | ![Add Provider](assets/screenshots/add-en.png) |
 
-## 功能特性
+## 兼容性
 
-[完整更新日志](CHANGELOG.md) | [发布说明](docs/release-notes/v3.12.3-zh.md)
+### 主要目标平台
 
-### 供应商管理
+- macOS 10.15 Catalina
 
-- **5 个 CLI 工具，50+ 预设** — Claude Code、Codex、Gemini CLI、OpenCode、OpenClaw；复制 key 即可一键导入
-- **通用供应商** — 一份配置同步到多个应用（OpenCode、OpenClaw）
-- 一键切换、系统托盘快速访问、拖拽排序、导入导出
+### 理论上也应继续可用
 
-### 代理与故障转移
+- macOS 11 及以上
+- Windows
+- Linux
 
-- **本地代理热切换** — 格式转换、自动故障转移、熔断器、供应商健康监控和整流器
-- **应用级代理接管** — 独立为 Claude、Codex 或 Gemini 配置代理，具体到单个供应商
-
-### MCP、Prompts 与 Skills
-
-- **统一 MCP 面板** — 管理 4 个应用的 MCP 服务器，双向同步，支持 Deep Link 导入
-- **Prompts** — Markdown 编辑器，跨应用同步（CLAUDE.md / AGENTS.md / GEMINI.md），回填保护
-- **Skills** — 从 GitHub 仓库或 ZIP 文件一键安装，自定义仓库管理，支持软连接和文件复制
-
-### 用量与成本追踪
-
-- **用量仪表盘** — 跨供应商追踪支出、请求数和 Token 用量，趋势图表、详细请求日志和自定义模型定价
-
-### 会话管理器与工作区
-
-- 浏览、搜索和恢复全部应用对话历史
-- **工作区编辑器**（OpenClaw）— 编辑 Agent 文件（AGENTS.md、SOUL.md 等），支持 Markdown 预览
-
-### 系统与平台
-
-- **云同步** — 自定义配置目录（Dropbox、OneDrive、iCloud、坚果云、NAS）及 WebDAV 服务器同步
-- **Deep Link** (`ccswitch://`) — 通过 URL 一键导入供应商、MCP 服务器、提示词和技能
-- 深色 / 浅色 / 跟随系统主题、开机自启、自动更新、原子写入、自动备份、国际化（中/英/日）
-
-## 常见问题
-
-<details>
-<summary><strong>CC Switch 支持哪些 AI CLI 工具？</strong></summary>
-
-CC Switch 支持五个工具：**Claude Code**、**Codex**、**Gemini CLI**、**OpenCode** 和 **OpenClaw**。每个工具都有专属的供应商预设和配置管理。
-
-</details>
-
-<details>
-<summary><strong>切换供应商后需要重启终端吗？</strong></summary>
-
-大多数工具需要重启终端或 CLI 工具才能使更改生效。例外的是 **Claude Code**，它目前支持供应商数据的热切换，无需重启。
-
-</details>
-
-<details>
-<summary><strong>切换供应商之后我的插件配置怎么不见了？</strong></summary>
-
-CC Switch 使用“通用配置片段”功能，在不同的供应商之间传递 Key 和请求地址之外的通用数据，您可以在“编辑供应商”菜单的“通用配置面板”里，点击“从当前供应商提取”，把所有的通用数据提取到通用配置中，之后在新建“供应商”的时候，只要勾选“写入通用配置”（默认勾选），就会把插件等数据写入到新的供应商配置中。您的所有配置项都会保存在运行本软件的时候，第一次导入的默认供应商里面，不会丢失。
-
-</details>
-
-<details>
-<summary><strong>macOS 安装</strong></summary>
-
-CC Switch macOS 版本已通过 Apple 代码签名和公证，可直接下载安装，无需额外操作。推荐使用 `.dmg` 安装包。
-
-</details>
-
-<details>
-<summary><strong>为什么总有一个正在激活中的供应商无法删除？</strong></summary>
-
-本软件的设计原则是“最小侵入性”，即使卸载本软件，也不会影响应用的正常使用。
-
-所以系统总会保留一个正在激活中的配置，因为如果将所有配置全部删除，该应用将无法正常使用。如果你不经常使用某个对应的应用，可以在设置中关掉该应用的显示。如果你想切换回官方登录，可以参考下条。
-
-</details>
-
-<details>
-<summary><strong>如何切换回官方登录？</strong></summary>
-
-可以在预设供应商里面添加一个官方供应商。切换过去之后，执行一遍 Log out / Log in 流程，之后便可以在官方供应商和第三方供应商之间随意切换。CodeX 可以在不同官方供应商之间进行切换，方便多个 Plus 或者 Team 账号之间切换。
-
-</details>
-
-<details>
-<summary><strong>我的数据存储在哪里？</strong></summary>
-
-- **数据库**：`~/.cc-switch/cc-switch.db`（SQLite — 供应商、MCP、提示词、技能）
-- **本地设置**：`~/.cc-switch/settings.json`（设备级 UI 偏好设置）
-- **备份**：`~/.cc-switch/backups/`（自动轮换，保留最近 10 个）
-- **SKILLS**：`~/.cc-switch/skills/`（默认通过软链接连接到对应应用）
-- **技能备份**：`~/.cc-switch/skill-backups/`（卸载前自动创建，保留最近 20 个）
-
-</details>
-
-## 文档
-
-如需了解各项功能的详细使用方法，请查阅 **[用户手册](docs/user-manual/zh/README.md)** — 涵盖供应商管理、MCP/Prompts/Skills、代理与故障转移等全部功能。
+这个仓库存在的主要原因就是维护 Catalina 兼容性，其他平台原则上尽量保持与上游一致。
 
 ## 快速开始
 
 ### 基本使用
 
-1. **添加供应商**：点击"添加供应商" → 选择预设或创建自定义配置
-2. **切换供应商**：
-   - 主界面：选择供应商 → 点击"启用"
-   - 系统托盘：直接点击供应商名称（立即生效）
-3. **生效方式**：重启终端或对应的 CLI 工具以应用更改（CLaude Code 无需重启）
-4. **恢复官方登录**：添加"官方登录"预设，重启 CLI 工具后按照其登录/OAuth 流程操作
+1. 在主界面中添加一个 provider
+2. 启用你想使用的 provider
+3. 按对应 CLI 的要求重启终端或工具进程
+4. 需要快速切换时可直接使用托盘菜单
 
-### MCP、Prompts、Skills 与会话
+### 文档入口
 
-- **MCP**：点击"MCP"按钮 → 通过模板或自定义配置添加服务器 → 切换各应用同步开关
-- **Prompts**：点击"Prompts" → 使用 Markdown 编辑器创建预设 → 激活后同步到 live 文件
-- **Skills**：点击"Skills" → 浏览 GitHub 仓库 → 一键安装到全部应用
-- **会话**：点击"Sessions" → 浏览和搜索和恢复全部应用对话历史
-
-> **注意**：首次启动可以手动导入现有 CLI 工具配置作为默认供应商。
-
-## 下载安装
+- [macOS 10.15 兼容适配说明](docs/macos-10.15-compat.md)
+- [用户手册 English](docs/user-manual/en/README.md)
+- [用户手册 中文](docs/user-manual/zh/README.md)
+- [ユーザーマニュアル 日本語](docs/user-manual/ja/README.md)
 
 ### 系统要求
 
@@ -360,146 +247,51 @@ paru -S cc-switch-bin
 - Rust 1.85+
 - Tauri CLI 2.8+
 
-### 开发命令
+### 常用命令
 
 ```bash
-# 安装依赖
 pnpm install
-
-# 开发模式（热重载）
 pnpm dev
-
-# 类型检查
 pnpm typecheck
-
-# 代码格式化
-pnpm format
-
-# 检查代码格式
-pnpm format:check
-
-# 运行前端单元测试
 pnpm test:unit
-
-# 监听模式运行测试（推荐开发时使用）
-pnpm test:unit:watch
-
-# 构建应用
 pnpm build
-
-# 构建调试版本
-pnpm tauri build --debug
 ```
 
-### Rust 后端开发
+### Rust 后端
 
 ```bash
 cd src-tauri
-
-# 格式化 Rust 代码
 cargo fmt
-
-# 运行 clippy 检查
 cargo clippy
-
-# 运行后端测试
 cargo test
-
-# 运行特定测试
-cargo test test_name
-
-# 运行带测试 hooks 的测试
-cargo test --features test-hooks
 ```
 
-### 测试说明
+## macOS 10.15 相关说明
 
-**前端测试**：
+这个分支已经内置了几项关键的 Catalina 兼容配置：
 
-- 使用 **vitest** 作为测试框架
-- 使用 **MSW (Mock Service Worker)** 模拟 Tauri API 调用
-- 使用 **@testing-library/react** 进行组件测试
+- `.cargo/config.toml` 中设置了 `MACOSX_DEPLOYMENT_TARGET=10.15`
+- `src-tauri/tauri.conf.json` 中将 `minimumSystemVersion` 设置为 `10.15`
+- `vite.config.ts` 里下调了 Safari 相关构建目标
+- `package.json` 中将 `esbuild` 固定到 Catalina 可用的版本
 
-**运行测试**：
+如果你遇到 Catalina 专属问题，建议先看 [docs/macos-10.15-compat.md](docs/macos-10.15-compat.md)。
 
-```bash
-# 运行所有测试
-pnpm test:unit
+## 项目结构
 
-# 监听模式（自动重跑）
-pnpm test:unit:watch
-
-# 带覆盖率报告
-pnpm test:unit --coverage
+```text
+src/              前端（React + TypeScript）
+src-tauri/        后端（Tauri + Rust）
+assets/           截图与静态资源
+docs/             兼容性说明、用户手册、发布说明
+tests/            前端测试
 ```
 
-### 技术栈
+## 致谢
 
-**前端**：React 18 · TypeScript · Vite · TailwindCSS 3.4 · TanStack Query v5 · react-i18next · react-hook-form · zod · shadcn/ui · @dnd-kit
+- 原始项目：[farion1231/cc-switch](https://github.com/farion1231/cc-switch)
+- 本仓库是兼容性分支，不是上游官方发布渠道
 
-**后端**：Tauri 2.8 · Rust · serde · tokio · thiserror · tauri-plugin-updater/process/dialog/store/log
+## 许可证
 
-**测试**：vitest · MSW · @testing-library/react
-
-</details>
-
-<details>
-<summary><strong>项目结构</strong></summary>
-
-```
-├── src/                        # 前端 (React + TypeScript)
-│   ├── components/
-│   │   ├── providers/          # 供应商管理
-│   │   ├── mcp/                # MCP 面板
-│   │   ├── prompts/            # Prompts 管理
-│   │   ├── skills/             # Skills 管理
-│   │   ├── sessions/           # 会话管理器
-│   │   ├── proxy/              # Proxy 模式面板
-│   │   ├── openclaw/           # OpenClaw 配置面板
-│   │   ├── settings/           # 设置（终端/备份/关于）
-│   │   ├── deeplink/           # Deep Link 导入
-│   │   ├── env/                # 环境变量管理
-│   │   ├── universal/          # 跨应用配置
-│   │   ├── usage/              # 用量统计
-│   │   └── ui/                 # shadcn/ui 组件库
-│   ├── hooks/                  # 自定义 hooks（业务逻辑）
-│   ├── lib/
-│   │   ├── api/                # Tauri API 封装（类型安全）
-│   │   └── query/              # TanStack Query 配置
-│   ├── locales/                # 翻译 (zh/en/ja)
-│   ├── config/                 # 预设 (providers/mcp)
-│   └── types/                  # TypeScript 类型定义
-├── src-tauri/                  # 后端 (Rust)
-│   └── src/
-│       ├── commands/           # Tauri 命令层（按领域）
-│       ├── services/           # 业务逻辑层
-│       ├── database/           # SQLite DAO 层
-│       ├── proxy/              # Proxy 模块
-│       ├── session_manager/    # 会话管理
-│       ├── deeplink/           # Deep Link 处理
-│       └── mcp/                # MCP 同步模块
-├── tests/                      # 前端测试
-└── assets/                     # 截图 & 合作商资源
-```
-
-</details>
-
-## 贡献
-
-欢迎提交 Issue 反馈问题和建议！
-
-提交 PR 前请确保：
-
-- 通过类型检查：`pnpm typecheck`
-- 通过格式检查：`pnpm format:check`
-- 通过单元测试：`pnpm test:unit`
-
-新功能开发前，欢迎先开 Issue 讨论实现方案，不适合项目的功能性 PR 有可能会被关闭。
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=farion1231/cc-switch&type=Date)](https://www.star-history.com/#farion1231/cc-switch&Date)
-
-## License
-
-MIT © Jason Young
+本项目继续使用 [MIT License](LICENSE)。

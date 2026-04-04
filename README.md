@@ -1,17 +1,14 @@
 <div align="center">
 
-# CC Switch
+# CC Switch Legacy
 
-### The All-in-One Manager for Claude Code, Codex, Gemini CLI, OpenCode & OpenClaw
+### Compatibility Fork for macOS 10.15 Catalina
 
-[![Version](https://img.shields.io/github/v/release/farion1231/cc-switch?color=blue&label=version)](https://github.com/farion1231/cc-switch/releases)
-[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](https://github.com/farion1231/cc-switch/releases)
+[![Platform](https://img.shields.io/badge/platform-Windows%20%7C%20macOS%20%7C%20Linux-lightgrey.svg)](#compatibility)
+[![macOS](https://img.shields.io/badge/macOS-10.15%2B-blue.svg)](#compatibility)
 [![Built with Tauri](https://img.shields.io/badge/built%20with-Tauri%202-orange.svg)](https://tauri.app/)
-[![Downloads](https://img.shields.io/github/downloads/farion1231/cc-switch/total)](https://github.com/farion1231/cc-switch/releases/latest)
 
-<a href="https://trendshift.io/repositories/15372" target="_blank"><img src="https://trendshift.io/api/badge/repositories/15372" alt="farion1231%2Fcc-switch | Trendshift" style="width: 250px; height: 55px;" width="250" height="55"/></a>
-
-English | [中文](README_ZH.md) | [日本語](README_JA.md) | [Changelog](CHANGELOG.md)
+English | [Compatibility Notes (ZH)](docs/macos-10.15-compat.md) | [Upstream Project](https://github.com/farion1231/cc-switch) | [Changelog](CHANGELOG.md)
 
 </div>
 
@@ -79,159 +76,57 @@ Claude Code / Codex / Gemini official channels at 38% / 2% / 9% of original pric
 <td>Thank you to Right Code for sponsoring this project! Right Code reliably provides routing services for models such as Claude Code, Codex, and Gemini. It features a highly cost-effective Codex monthly subscription plan and <strong>supports quota rollovers—unused quota from one day can be carried over and used the next day.</strong> Invoices are available upon top-up. Enterprise and team users can receive dedicated one-on-one support. Right Code also offers an exclusive discount for CC Switch users: register via <a href="https://www.right.codes/register?aff=CCSWITCH">this link</a>, and with every top-up you will receive pay-as-you-go credit equivalent to 25% of the amount paid.</td>
 </tr>
 
-<tr>
-<td width="180"><a href="https://aicoding.sh/i/CCSWITCH"><img src="assets/partners/logos/aicoding.jpg" alt="AICoding" width="150"></a></td>
-<td>Thanks to AICoding.sh for sponsoring this project! AICoding.sh — Global AI Model API Relay Service at Unbeatable Prices! Claude Code at 19% of original price, GPT at just 1%! Trusted by hundreds of enterprises for cost-effective AI services. Supports Claude Code, GPT, Gemini and major domestic models, with enterprise-grade high concurrency, fast invoicing, and 24/7 dedicated technical support. CC Switch users who register via <a href="https://aicoding.sh/i/CCSWITCH">this link</a> get 10% off their first top-up!</td>
-</tr>
+This repository is a compatibility-focused fork of [CC Switch](https://github.com/farion1231/cc-switch).
 
-<tr>
-<td width="180"><a href="https://crazyrouter.com/register?aff=OZcm&ref=cc-switch"><img src="assets/partners/logos/crazyrouter.jpg" alt="Crazyrouter" width="150"></a></td>
-<td>Thanks to Crazyrouter for sponsoring this project! Crazyrouter is a high-performance AI API aggregation platform — one API key for 300+ models including Claude Code, Codex, Gemini CLI, and more. All models at 55% of official pricing with auto-failover, smart routing, and unlimited concurrency. Crazyrouter offers an exclusive deal for CC Switch users: register via <a href="https://crazyrouter.com/register?aff=OZcm&ref=cc-switch">this link</a>  to get <strong>$2 free credit</strong> instantly, plus enter promo code `CCSWITCH` on your first top-up for an extra <strong>30% bonus credit</strong>! </td>
-</tr>
+The goal of this fork is simple: keep the original CC Switch experience, while making the desktop app buildable and usable on **macOS 10.15 Catalina**, which is not supported by the upstream project anymore.
 
-<tr>
-<td width="180"><a href="https://www.sssaicode.com/register?ref=DCP0SM"><img src="assets/partners/logos/sssaicode.png" alt="SSSAiCode" width="150"></a></td>
-<td>Thanks to SSSAiCode for sponsoring this project! SSSAiCode is a stable and reliable API relay service, dedicated to providing stable, reliable, and affordable Claude and Codex model services, <strong>offering high cost-effective official Claude service at just ¥0.5/$ equivalent</strong>, supporting monthly and pay-as-you-go billing plans with same-day fast invoicing. SSSAiCode offers a special deal for CC Switch users: register via <a href="https://www.sssaicode.com/register?ref=DCP0SM">this link</a> to enjoy $10 extra credit on every top-up!</td>
-</tr>
+If you are on macOS 12+ and do not specifically need Catalina support, the upstream project is still the better default choice.
 
-<tr>
-<td width="180"><a href="https://www.openclaudecode.cn/register?aff=aOYQ"><img src="assets/partners/logos/mikubanner.svg" alt="Micu" width="150"></a></td>
-<td>Thanks to Micu API for sponsoring this project! Micu API is a global LLM relay service provider dedicated to delivering the best cost-performance ratio with high stability. Backed by a registered enterprise for core assurance, eliminating any risk of service discontinuation, with fast official invoicing support! We champion "zero cost to try": top up from as low as ¥1 with no minimum, and get fee-free refunds anytime! Micu API offers an exclusive deal for CC Switch users: register via <a href="https://www.openclaudecode.cn/register?aff=aOYQ">this link</a> and enter promo code "ccswitch" when topping up to enjoy a <strong>10% discount</strong>!</td>
-</tr>
+## What Changed In This Fork
 
-<tr>
-<td width="180"><a href="https://x-code.cc/register?aff=IbPp"><img src="assets/partners/logos/xcodeapi.png" alt="XCodeAPI" width="150"></a></td>
-<td>Thanks to XCodeAPI for sponsoring this project! XCodeAPI offers a special benefit for CC Switch users: register via <a href="https://x-code.cc/register?aff=IbPp">this link</a> and get an extra 10% credit bonus on your first order! (Contact the site admin to claim)</td>
-</tr>
+Compared with upstream CC Switch, this fork adds or adjusts the following areas for older macOS compatibility:
 
-<tr>
-<td width="180"><a href="https://ctok.ai"><img src="assets/partners/logos/ctok.png" alt="CTok" width="150"></a></td>
-<td>Thanks to CTok.ai for sponsoring this project! CTok.ai is dedicated to building a one-stop AI programming tool service platform. We offer professional Claude Code packages and technical community services, with support for Google Gemini and OpenAI Codex. Through carefully designed plans and a professional tech community, we provide developers with reliable service guarantees and continuous technical support, making AI-assisted programming a true productivity tool. Click <a href="https://ctok.ai">here</a> to register!</td>
-</tr>
+- Lowered the macOS deployment target from `12.0` to `10.15`
+- Updated Tauri bundle config to allow `macOS 10.15+`
+- Added an `objc2` dev-mode workaround for older WebKit protocol methods
+- Pinned `esbuild` to `0.21.5` to avoid newer macOS-only symbols
+- Lowered frontend build targets for older Safari / WKWebView behavior
+- Replaced `smol-toml` with `@iarna/toml` to avoid `BigInt` syntax issues on Safari 13
+- Added `MediaQueryList.addListener` fallback for Safari 13 theme change handling
 
-<tr>
-<td width="180"><a href="https://chefshop.ai"><img src="assets/partners/logos/chefshop.png" alt="ChefShop" width="150"></a></td>
-<td>Thanks to ChefShop AI for sponsoring this project! ChefShop AI is a premium account service provider tailored for heavy AI subscription users. The platform offers official top-up and stable account services for mainstream large models including ChatGPT Plus/Pro, Claude Max, Grok Super/Heavy, and Gemini. Click <a href="https://chefshop.ai">here</a> to purchase!</td>
-</tr>
-
-</table>
-
-</details>
-
-## Why CC Switch?
-
-Modern AI-powered coding relies on CLI tools like Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw — but each has its own configuration format. Switching API providers means manually editing JSON, TOML, or `.env` files, and there is no unified way to manage MCP and Skills across multiple tools.
-
-**CC Switch** gives you a single desktop app to manage all five CLI tools. Instead of editing config files by hand, you get a visual interface to import providers with one click, switch between them instantly, with 50+ built-in provider presets, unified MCP and Skills management, and system tray quick switching — all backed by a reliable SQLite database with atomic writes that protect your configs from corruption.
-
-- **One App, Five CLI Tools** — Manage Claude Code, Codex, Gemini CLI, OpenCode, and OpenClaw from a single interface
-- **No More Manual Editing** — 50+ provider presets including AWS Bedrock, NVIDIA NIM, and community relays; just pick and switch
-- **Unified MCP & Skills Management** — One panel to manage MCP servers and Skills across four apps with bidirectional sync
-- **System Tray Quick Switch** — Switch providers instantly from the tray menu, no need to open the full app
-- **Cloud Sync** — Sync provider data across devices via Dropbox, OneDrive, iCloud, or WebDAV servers
-- **Cross-Platform** — Native desktop app for Windows, macOS, and Linux, built with Tauri 2
-- **Built-in Utilities** — Includes various utilities for first-launch login confirmation, signature bypass, plugin extension sync, and more
-
-## Screenshots
-
-|                  Main Interface                   |                  Add Provider                  |
-| :-----------------------------------------------: | :--------------------------------------------: |
-| ![Main Interface](assets/screenshots/main-en.png) | ![Add Provider](assets/screenshots/add-en.png) |
+Detailed adaptation notes are documented in [docs/macos-10.15-compat.md](docs/macos-10.15-compat.md).
 
 ## Features
 
-[Full Changelog](CHANGELOG.md) | [Release Notes](docs/release-notes/v3.12.3-en.md)
+This fork keeps the main CC Switch feature set:
 
-### Provider Management
+- Manage **Claude Code**, **Codex**, **Gemini CLI**, **OpenCode**, and **OpenClaw** in one desktop app
+- Import and switch providers without manually editing JSON, TOML, or `.env` files
+- Manage **MCP**, **Prompts**, and **Skills** from a unified interface
+- Use **system tray quick switching** for fast provider changes
+- Track usage and cost data with built-in statistics views
+- Sync data through custom config directories or WebDAV
+- Browse and restore session history across supported apps
 
-- **5 CLI tools, 50+ presets** — Claude Code, Codex, Gemini CLI, OpenCode, OpenClaw; copy your key and import with one click
-- **Universal providers** — One config syncs to multiple apps (OpenCode, OpenClaw)
-- One-click switching, system tray quick access, drag-and-drop sorting, import/export
+## Screenshots
 
-### Proxy & Failover
+| Main Interface | Add Provider |
+| :---: | :---: |
+| ![Main Interface](assets/screenshots/main-en.png) | ![Add Provider](assets/screenshots/add-en.png) |
 
-- **Local proxy with hot-switching** — Format conversion, auto-failover, circuit breaker, provider health monitoring, and request rectifier
-- **App-level takeover** — Independently proxy Claude, Codex, or Gemini, down to individual providers
+## Compatibility
 
-### MCP, Prompts & Skills
+### Primary Target
 
-- **Unified MCP panel** — Manage MCP servers across 4 apps with bidirectional sync and Deep Link import
-- **Prompts** — Markdown editor with cross-app sync (CLAUDE.md / AGENTS.md / GEMINI.md) and backfill protection
-- **Skills** — One-click install from GitHub repos or ZIP files, custom repository management, with symlink and file copy support
+- macOS 10.15 Catalina
 
-### Usage & Cost Tracking
+### Also Expected To Work
 
-- **Usage dashboard** — Track spending, requests, and tokens with trend charts, detailed request logs, and custom per-model pricing
+- macOS 11+
+- Windows
+- Linux
 
-### Session Manager & Workspace
-
-- Browse, search, and restore conversation history across all apps
-- **Workspace editor** (OpenClaw) — Edit agent files (AGENTS.md, SOUL.md, etc.) with Markdown preview
-
-### System & Platform
-
-- **Cloud sync** — Custom config directory (Dropbox, OneDrive, iCloud, NAS) and WebDAV server sync
-- **Deep Link** (`ccswitch://`) — Import providers, MCP servers, prompts, and skills via URL
-- Dark / Light / System theme, auto-launch, auto-updater, atomic writes, auto-backups, i18n (zh/en/ja)
-
-## FAQ
-
-<details>
-<summary><strong>Which AI CLI tools does CC Switch support?</strong></summary>
-
-CC Switch supports five tools: **Claude Code**, **Codex**, **Gemini CLI**, **OpenCode**, and **OpenClaw**. Each tool has dedicated provider presets and configuration management.
-
-</details>
-
-<details>
-<summary><strong>Do I need to restart the terminal after switching providers?</strong></summary>
-
-For most tools, yes — restart your terminal or the CLI tool for changes to take effect. The exception is **Claude Code**, which currently supports hot-switching of provider data without a restart.
-
-</details>
-
-<details>
-<summary><strong>My plugin configuration disappeared after switching providers — what happened?</strong></summary>
-
-CC Switch provides a "Shared Config Snippet" feature to pass common data (beyond API keys and endpoints) between providers. Go to "Edit Provider" → "Shared Config Panel" → click "Extract from Current Provider" to save all common data. When creating a new provider, check "Write Shared Config" (enabled by default) to include plugin data in the new provider. All your configuration items are preserved in the default provider imported when you first launched the app.
-
-</details>
-
-<details>
-<summary><strong>macOS installation</strong></summary>
-
-CC Switch for macOS is code-signed and notarized by Apple. You can download and install it directly — no extra steps needed. We recommend using the `.dmg` installer.
-
-</details>
-
-<details>
-<summary><strong>Why can't I delete the currently active provider?</strong></summary>
-
-CC Switch follows a "minimal intrusion" design principle — even if you uninstall the app, your CLI tools will continue to work normally. The system always keeps one active configuration, because deleting all configurations would make the corresponding CLI tool unusable. If you rarely use a specific CLI tool, you can hide it in Settings. To switch back to official login, see the next question.
-
-</details>
-
-<details>
-<summary><strong>How do I switch back to official login?</strong></summary>
-
-Add an official provider from the preset list. After switching to it, run the Log out / Log in flow, and then you can freely switch between the official provider and third-party providers. Codex supports switching between different official providers, making it easy to switch between multiple Plus or Team accounts.
-
-</details>
-
-<details>
-<summary><strong>Where is my data stored?</strong></summary>
-
-- **Database**: `~/.cc-switch/cc-switch.db` (SQLite — providers, MCP, prompts, skills)
-- **Local settings**: `~/.cc-switch/settings.json` (device-level UI preferences)
-- **Backups**: `~/.cc-switch/backups/` (auto-rotated, keeps 10 most recent)
-- **Skills**: `~/.cc-switch/skills/` (symlinked to corresponding apps by default)
-- **Skill Backups**: `~/.cc-switch/skill-backups/` (created automatically before uninstall, keeps 20 most recent)
-
-</details>
-
-## Documentation
-
-For detailed guides on every feature, check out the **[User Manual](docs/user-manual/en/README.md)** — covering provider management, MCP/Prompts/Skills, proxy & failover, and more.
+This fork is primarily maintained for Catalina compatibility. Other platforms should remain close to upstream behavior, but Catalina support is the reason this repository exists.
 
 ## Quick Start
 
@@ -263,240 +158,72 @@ For detailed guides on every feature, check out the **[User Manual](docs/user-ma
 
 ### Windows Users
 
-Download the latest `CC-Switch-v{version}-Windows.msi` installer or `CC-Switch-v{version}-Windows-Portable.zip` portable version from the [Releases](../../releases) page.
+1. Add a provider from the main UI
+2. Enable the provider you want to use
+3. Restart the related CLI tool or terminal if required
+4. Use the tray menu for quick switching when needed
 
-### macOS Users
+### Documentation
 
-**Method 1: Install via Homebrew (Recommended)**
+- [Compatibility Notes for macOS 10.15](docs/macos-10.15-compat.md)
+- [User Manual (English)](docs/user-manual/en/README.md)
+- [User Manual (Chinese)](docs/user-manual/zh/README.md)
+- [User Manual (Japanese)](docs/user-manual/ja/README.md)
 
-```bash
-brew tap farion1231/ccswitch
-brew install --cask cc-switch
-```
+## Build From Source
 
-Update:
-
-```bash
-brew upgrade --cask cc-switch
-```
-
-**Method 2: Manual Download**
-
-Download `CC-Switch-v{version}-macOS.dmg` (recommended) or `.zip` from the [Releases](../../releases) page.
-
-> **Note**: CC Switch for macOS is code-signed and notarized by Apple. You can install and open it directly.
-
-### Arch Linux Users
-
-**Install via paru (Recommended)**
-
-```bash
-paru -S cc-switch-bin
-```
-
-### Linux Users
-
-Download the latest Linux build from the [Releases](../../releases) page:
-
-- `CC-Switch-v{version}-Linux.deb` (Debian/Ubuntu)
-- `CC-Switch-v{version}-Linux.rpm` (Fedora/RHEL/openSUSE)
-- `CC-Switch-v{version}-Linux.AppImage` (Universal)
-
-> **Flatpak**: Not included in official releases. You can build it yourself from the `.deb` — see [`flatpak/README.md`](flatpak/README.md) for instructions.
-
-<details>
-<summary><strong>Architecture Overview</strong></summary>
-
-### Design Principles
-
-```
-┌─────────────────────────────────────────────────────────────┐
-│                    Frontend (React + TS)                    │
-│  ┌─────────────┐  ┌──────────────┐  ┌──────────────────┐    │
-│  │ Components  │  │    Hooks     │  │  TanStack Query  │    │
-│  │   (UI)      │──│ (Bus. Logic) │──│   (Cache/Sync)   │    │
-│  └─────────────┘  └──────────────┘  └──────────────────┘    │
-└────────────────────────┬────────────────────────────────────┘
-                         │ Tauri IPC
-┌────────────────────────▼────────────────────────────────────┐
-│                  Backend (Tauri + Rust)                     │
-│  ┌─────────────┐  ┌──────────────┐  ┌──────────────────┐    │
-│  │  Commands   │  │   Services   │  │  Models/Config   │    │
-│  │ (API Layer) │──│ (Bus. Layer) │──│     (Data)       │    │
-│  └─────────────┘  └──────────────┘  └──────────────────┘    │
-└─────────────────────────────────────────────────────────────┘
-```
-
-**Core Design Patterns**
-
-- **SSOT** (Single Source of Truth): All data stored in `~/.cc-switch/cc-switch.db` (SQLite)
-- **Dual-layer Storage**: SQLite for syncable data, JSON for device-level settings
-- **Dual-way Sync**: Write to live files on switch, backfill from live when editing active provider
-- **Atomic Writes**: Temp file + rename pattern prevents config corruption
-- **Concurrency Safe**: Mutex-protected database connection avoids race conditions
-- **Layered Architecture**: Clear separation (Commands → Services → DAO → Database)
-
-**Key Components**
-
-- **ProviderService**: Provider CRUD, switching, backfill, sorting
-- **McpService**: MCP server management, import/export, live file sync
-- **ProxyService**: Local proxy mode with hot-switching and format conversion
-- **SessionManager**: Conversation history browsing across all supported apps
-- **ConfigService**: Config import/export, backup rotation
-- **SpeedtestService**: API endpoint latency measurement
-
-</details>
-
-<details>
-<summary><strong>Development Guide</strong></summary>
-
-### Environment Requirements
+### Requirements
 
 - Node.js 18+
 - pnpm 8+
 - Rust 1.85+
 - Tauri CLI 2.8+
 
-### Development Commands
+### Commands
 
 ```bash
-# Install dependencies
 pnpm install
-
-# Dev mode (hot reload)
 pnpm dev
-
-# Type check
 pnpm typecheck
-
-# Format code
-pnpm format
-
-# Check code format
-pnpm format:check
-
-# Run frontend unit tests
 pnpm test:unit
-
-# Run tests in watch mode (recommended for development)
-pnpm test:unit:watch
-
-# Build application
 pnpm build
-
-# Build debug version
-pnpm tauri build --debug
 ```
 
-### Rust Backend Development
+### Rust Backend
 
 ```bash
 cd src-tauri
-
-# Format Rust code
 cargo fmt
-
-# Run clippy checks
 cargo clippy
-
-# Run backend tests
 cargo test
-
-# Run specific tests
-cargo test test_name
-
-# Run tests with test-hooks feature
-cargo test --features test-hooks
 ```
 
-### Testing Guide
+## macOS 10.15 Notes
 
-**Frontend Testing**:
+This fork already includes the key Catalina-related project changes:
 
-- Uses **vitest** as test framework
-- Uses **MSW (Mock Service Worker)** to mock Tauri API calls
-- Uses **@testing-library/react** for component testing
+- `.cargo/config.toml` sets `MACOSX_DEPLOYMENT_TARGET=10.15`
+- `src-tauri/tauri.conf.json` sets `minimumSystemVersion` to `10.15`
+- `vite.config.ts` targets older Safari-compatible output
+- `package.json` pins `esbuild` to a Catalina-safe version
 
-**Running Tests**:
+If you are troubleshooting Catalina-specific issues, start with [docs/macos-10.15-compat.md](docs/macos-10.15-compat.md).
 
-```bash
-# Run all tests
-pnpm test:unit
+## Project Structure
 
-# Watch mode (auto re-run)
-pnpm test:unit:watch
-
-# With coverage report
-pnpm test:unit --coverage
+```text
+src/              Frontend (React + TypeScript)
+src-tauri/        Backend (Tauri + Rust)
+assets/           Screenshots and static assets
+docs/             Compatibility notes, manuals, and release notes
+tests/            Frontend tests
 ```
 
-### Tech Stack
+## Acknowledgements
 
-**Frontend**: React 18 · TypeScript · Vite · TailwindCSS 3.4 · TanStack Query v5 · react-i18next · react-hook-form · zod · shadcn/ui · @dnd-kit
-
-**Backend**: Tauri 2.8 · Rust · serde · tokio · thiserror · tauri-plugin-updater/process/dialog/store/log
-
-**Testing**: vitest · MSW · @testing-library/react
-
-</details>
-
-<details>
-<summary><strong>Project Structure</strong></summary>
-
-```
-├── src/                        # Frontend (React + TypeScript)
-│   ├── components/
-│   │   ├── providers/          # Provider management
-│   │   ├── mcp/                # MCP panel
-│   │   ├── prompts/            # Prompts management
-│   │   ├── skills/             # Skills management
-│   │   ├── sessions/           # Session Manager
-│   │   ├── proxy/              # Proxy mode panel
-│   │   ├── openclaw/           # OpenClaw config panels
-│   │   ├── settings/           # Settings (Terminal/Backup/About)
-│   │   ├── deeplink/           # Deep Link import
-│   │   ├── env/                # Environment variable management
-│   │   ├── universal/          # Cross-app configuration
-│   │   ├── usage/              # Usage statistics
-│   │   └── ui/                 # shadcn/ui component library
-│   ├── hooks/                  # Custom hooks (business logic)
-│   ├── lib/
-│   │   ├── api/                # Tauri API wrapper (type-safe)
-│   │   └── query/              # TanStack Query config
-│   ├── locales/                # Translations (zh/en/ja)
-│   ├── config/                 # Presets (providers/mcp)
-│   └── types/                  # TypeScript definitions
-├── src-tauri/                  # Backend (Rust)
-│   └── src/
-│       ├── commands/           # Tauri command layer (by domain)
-│       ├── services/           # Business logic layer
-│       ├── database/           # SQLite DAO layer
-│       ├── proxy/              # Proxy module
-│       ├── session_manager/    # Session management
-│       ├── deeplink/           # Deep Link handling
-│       └── mcp/                # MCP sync module
-├── tests/                      # Frontend tests
-└── assets/                     # Screenshots & partner resources
-```
-
-</details>
-
-## Contributing
-
-Issues and suggestions are welcome!
-
-Before submitting PRs, please ensure:
-
-- Pass type check: `pnpm typecheck`
-- Pass format check: `pnpm format:check`
-- Pass unit tests: `pnpm test:unit`
-
-For new features, please open an issue for discussion before submitting a PR. PRs for features that are not a good fit for the project may be closed.
-
-## Star History
-
-[![Star History Chart](https://api.star-history.com/svg?repos=farion1231/cc-switch&type=Date)](https://www.star-history.com/#farion1231/cc-switch&Date)
+- Original project: [farion1231/cc-switch](https://github.com/farion1231/cc-switch)
+- This repository is a compatibility fork, not the official upstream release channel
 
 ## License
 
-MIT © Jason Young
+This project continues to use the [MIT License](LICENSE).
