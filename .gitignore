@@ -30,4 +30,9 @@ copilot-api
 CODEBUDDY.md
 .github
 .playwright-mcp/
+.playwright-cli/
 .pnpm-build-allow.json
+
+# OpenAI Codex plugin (Claude Code)
+/.codex
+CODEX.md
